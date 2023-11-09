@@ -1,0 +1,568 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box ;
+    text-decoration: none;
+}
+html ,body{
+    overflow-x: hidden;
+}
+body{
+    font-family: 'Barlow', sans-serif;
+/* font-family: 'Fraunces', serif; */
+
+}
+.hero-section{
+    background-image: url(images/desktop/image-header.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size:cover ;
+}
+nav{
+    height: 80px;
+    width: 100%;
+}
+.arrow{
+    display: none;
+}
+label.logo{
+    font-family: 'Barlow', serif;
+    color: white;
+    font-size: 30px;
+    line-height: 60px;
+    padding: 0 100px;
+    font-weight: 600;
+}
+nav ul{
+    float: right;
+    margin-right: 100px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 35px;
+}
+a.active , a:hover{
+    background:hsl(212, 13%, 80%);
+    transition: 0.5s;
+
+}
+.checkbtn{
+    font-size: 50px;
+    float: right;
+    list-style: 80px;
+    margin-right: 70px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.header{
+   font-family: 'Fraunces', serif;
+   color: white;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+    text-align: center;
+    padding-top: 30px;
+}
+.top-side{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: -5px;
+}
+img{
+    width: 100%;
+}
+.mobile{
+    display: none;
+}
+.top-left , .middle-right{
+    margin: 150px 125px;
+} 
+.small-title{
+    font-family: 'Fraunces', serif;
+font-size: 50px;
+}
+.gray-text{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Barlow', serif;
+    padding-right: 90px ;
+    color: hsl(232, 10%, 55%);
+}
+.bottom-text{
+    text-transform: uppercase;
+   text-decoration: underline;
+   text-decoration-color: hsl(51, 100%, 49%);
+   text-decoration-thickness: 7px;
+   text-decoration-style: unset;
+}
+.middle-side{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: -5px;
+}
+.secondtop-right{
+display: none;
+}
+.bottom-side{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.bottom-left{
+    background-image: url(images/desktop/image-graphic-design.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size:cover ;
+    
+}
+.bottom-right{
+    background-image: url(images/desktop/image-photography.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size:cover ;
+
+}
+.bleft-text , .bright-text{
+    margin-top: 430px;
+    margin-left: 125px;
+    margin-right: 125px;
+    place-content: center;
+    text-align: center;
+}
+.second-title{
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    margin-bottom: -20px;
+    color:  hsl(167, 40%, 24%);
+}
+.center{
+    padding: 70px;
+    font-family: 'Barlow', serif;
+    color: hsl(167, 40%, 24%);
+}
+.client-header{
+    font-family: 'Fraunces', serif;
+   color: hsl(232, 10%, 55%);
+   text-transform: uppercase;
+   font-size: 25px;
+   letter-spacing: 3px;
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 120px;
+}
+.clients{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.emilyimg , .thomasimg ,.jennieimg{
+    border-radius: 400px;
+    width: 15%;
+    place-content: center;
+    margin-bottom: -25px;
+    margin-top: 70px;
+}
+.client-left , .client-middle , .client-right{
+    text-align: center;
+}
+.client-text{
+    padding: 90px;
+    font-family: 'Barlow', serif;
+    color: hsl(213, 9%, 39%);
+    line-height: 27px;
+}
+.name{
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 27%, 19%);
+    font-weight: 900;
+}
+.under-name{
+    font-family: 'Barlow', serif;
+    color: hsl(210, 4%, 67%);
+    font-size: 15px;
+}
+.end{
+    margin-top: 140px;
+}
+.end-images{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  
+}
+footer{
+    display: inline-block;
+    place-content: center;
+    text-align: center;
+    font-family: 'Barlow', serif;
+    color:hsl(167, 40%, 24%) ;
+    margin: 30px 30px;
+    cursor: pointer;
+}
+footer:hover{
+    color: white;
+    transition: color .4s ease;
+}
+.last{
+    width: 100%;
+    height: 40vh;
+    text-align: center;
+    background-color: hsl(168, 22%, 56%);
+}
+svg.sunny-last{
+    fill:currentColor;
+    color: hsl(167, 40%, 24%);
+    stroke: hsl(167, 40%, 24%);
+}
+.sunny-last{
+    color: hsl(167, 40%, 24%);
+    font-family: 'Barlow', serif;
+    font-size: 32px;
+ fill: hsl(167, 40%, 24%);
+    font-weight: bold;
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+.social-img{
+    margin: 30px 50px;
+    letter-spacing: 20px;
+}
+@media only screen and (max-width: 1075px){
+    .top-side{
+        grid-template-columns: 1fr;
+
+    }
+    .middle-side{
+        grid-template-columns: 1fr;
+    }
+    .bottom-side{
+        grid-template-columns: 1fr;
+    }
+    .end-images{
+        grid-template-columns: 1fr 1fr;
+    }
+   .top-right{
+    display: none;
+   }
+   .secondtop-right{
+    display: block;
+   }
+   .bleft-text , .bright-text{
+    margin-top: 330px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    
+}
+.center{
+    padding: 70px;
+    width: 60%;
+    margin-left: 175px;
+   
+  
+}
+.last{
+    height: 50vh;
+}
+img{
+    height: 90vh;
+}
+       
+}
+
+
+@media (max-width:950px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .hero-section{
+        background-image: url(images/mobile/image-header.jpg);
+        height: 180vh;
+    }
+    .bottom-left{
+        background-image: url(images/mobile/image-graphic-design.jpg);
+        height: 180vh;
+    }
+    .bottom-right{
+        background-image: url(images/mobile/image-photography.jpg);
+        height: 180vh;
+    }
+    .header{
+        font-size: 75px;
+        width: 70%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    .arrow{
+        display: block;
+        place-content: center;
+        text-align: center;
+        width: 100%;
+        margin: 460px 400px;
+    }
+    .bleft-text , .bright-text{
+        margin-top: 730px;}
+    .center{
+        padding: 70px;
+        width: 80%;
+        margin-left: 60px;
+       
+      
+    }
+    .emilyimg , .thomasimg ,.jennieimg{
+        border-radius: 100%;
+        width: 10%;
+        height: 20%;
+        place-content: center;
+        margin-bottom: -25px;
+        margin-top: 70px;
+    }
+    .clients{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+    .client-text{
+        padding: 90px;
+       width: 70%;
+    
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+        line-height: 27px;
+    }
+}
+@media (max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: white ;
+        top: 80px;
+        left: -100%;
+        transition: all .5s;
+        text-align: center;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        color:hsl(213, 9%, 39%);
+    }
+    a:hover, a.active{
+background: hsl(51, 100%, 49%);
+color: hsl(213, 9%, 39%);
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .bright{
+        height: 50vh;
+    }
+}
+@media (max-width:538px){
+    .header{
+        font-size: 45px;
+        width: 100%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    
+  
+    .hero-section{
+        height: 100vh;
+    }
+    .emilyimg , .thomasimg ,.jennieimg{
+        border-radius: 100%;
+        width: 15%;
+        height: 17%;
+        place-content: center;
+        margin-bottom: -25px;
+        margin-top: 70px;
+    }
+    .client-text{
+        padding: 90px;
+       width: 105%;
+    
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+        line-height: 27px;
+    }
+    .bottom-left{
+        background-image: url(images/mobile/image-graphic-design.jpg);
+        height: 80vh;
+    }
+    .bottom-right{
+        background-image: url(images/mobile/image-photography.jpg);
+        height: 80vh;
+    }
+    .bleft-text , .bright-text{
+        margin-top: 230px;
+        margin-left: 55px;
+        margin-right: 55px;
+        
+        place-content: center;
+        text-align: center;
+    }
+    .center{
+        padding: 20px;
+        width: 100%;
+        margin-left: 7px;
+        margin-top: 40px;
+       
+      
+    }
+    .top-left , .middle-right{
+      
+        margin-top: 120px;
+        margin-bottom: 120px;
+        margin-left: 95px;
+        margin-right: 70px;
+    } 
+    .small-title{
+        width: 95%;
+        text-align: center;
+    }
+    .bottom-text{
+       text-align: center;
+    }
+    /* .top-left , .middle-right{
+        margin: 120px 75px;
+    }  */
+    .gray-text{
+        text-align: center;
+       
+        padding-right: 20px ;
+        
+    }
+    .client-header{
+        margin-top: -2px;
+    }
+
+    .arrow{
+        display: block;
+     margin: 180px 220px;
+      
+    }
+   
+   
+}
+@media (max-width:408px){
+    nav{
+        height: 60px;
+        width: 120%;
+    }
+    label.logo{
+        font-size: 30px;
+        padding-left: 20px;
+       
+        text-align: center;
+    }
+    .checkbtn{
+        margin: -10px 93px;
+    }
+}
+@media (max-width:388px){
+    nav{
+        height: 60px;
+        width: 140%;
+    }
+    label.logo{
+       
+       padding: 10px 20px;
+     
+    }
+  
+    .checkbtn{
+        margin: -10px 146px;
+    }
+    .arrow{
+        display: block;
+     margin: 180px 180px;
+      
+    }
+  img{
+    height: 300px;
+  }
+  .bottom-left{
+    background-image: url(images/mobile/image-graphic-design.jpg);
+    height: 100vh;
+}
+.bottom-right{
+    background-image: url(images/mobile/image-photography.jpg);
+    height: 100vh;
+}
+.top-left , .middle-right{
+      
+ left: 0;
+ right: 0;
+ margin: 0 auto;
+} 
+.small-title{
+  margin-bottom: -10px;
+  font-size: 30px;
+  padding: 10px 30px; 
+  margin-top: 20px;
+}
+.gray-text{
+    font-size: 15px;
+    padding: 10px 50px;
+}
+.bottom-text{
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+.bleft-text , .bright-text{
+    
+  left: 0;
+  right: 0;
+  margin: 360px auto;
+}
+.client-header{
+  margin-top: 40px;
+    font-size: 20px;
+}
+.client-text{
+    padding: 50px;
+    font-family: 'Barlow', serif;
+    color: hsl(213, 9%, 39%);
+    line-height: 27px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
